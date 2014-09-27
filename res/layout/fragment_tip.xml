@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_tip"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+	<!-- 提醒列表 -->
+	<ListView
+	    android:id="@+id/lvTip"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" >    
+	</ListView>
+	
+   	<!-- 添加提醒 -->
+    <LinearLayout
+        android:id="@+id/ll_add_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+            <TextView   
+		       android:layout_width="wrap_content" android:layout_height="match_parent"   
+       			android:gravity="left" android:text="内容：" />  
+            <EditText
+	            android:id="@+id/et_tip_content"
+    	        android:layout_width="match_parent"
+        	    android:layout_height="wrap_content"
+            	android:ems="10" >
+        	</EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <TextView   
+		    	android:layout_width="wrap_content" android:layout_height="match_parent"   
+       			android:gravity="left" android:text="时间" />  
+
+       		<EditText
+       		    android:id="@+id/et_tip_time"
+       		    android:layout_width="match_parent"
+       		    android:layout_height="wrap_content"
+       		    android:ems="10" >
+       		</EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <TextView   
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="match_parent"   
+       			android:gravity="left" android:text="日期" />  
+
+       		<EditText
+       		    android:id="@+id/et_tip_day"
+       		    android:layout_width="match_parent"
+       		    android:layout_height="wrap_content"
+       		    android:ems="10" >
+			</EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:text="@string/tv_tip_repeat" />
+
+			<Spinner
+			    android:id="@+id/sp_tip_repeat"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        
+    </LinearLayout>
+	
+    <Button
+        android:id="@+id/btnAddTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_add_tip" />
+    
+	    
+</LinearLayout>
