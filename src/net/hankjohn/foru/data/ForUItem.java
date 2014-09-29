@@ -15,4 +15,7 @@ public class ForUItem {
 	public String toString(){
 		return event.getTime() + " " + event.getDescription();
 	}
+	public ForUEvent getEvent(){
+		return this.event;
+	}
 }

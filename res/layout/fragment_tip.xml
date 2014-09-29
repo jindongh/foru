@@ -25,12 +25,12 @@
             android:layout_height="match_parent" >
             <TextView   
 		       android:layout_width="wrap_content" android:layout_height="match_parent"   
-       			android:gravity="left" android:text="内容：" />  
+       			android:gravity="left" android:text="@string/tv_tip_content" />  
             <EditText
 	            android:id="@+id/et_tip_content"
     	        android:layout_width="match_parent"
         	    android:layout_height="wrap_content"
-            	android:ems="10" >
+            	android:inputType="text" >
         	</EditText>
         </LinearLayout>
 
@@ -40,13 +40,13 @@
 
             <TextView   
 		    	android:layout_width="wrap_content" android:layout_height="match_parent"   
-       			android:gravity="left" android:text="时间" />  
+       			android:gravity="left" android:text="@string/tv_tip_time" />  
 
        		<EditText
        		    android:id="@+id/et_tip_time"
        		    android:layout_width="match_parent"
        		    android:layout_height="wrap_content"
-       		    android:ems="10" >
+       		    android:inputType="text" >
        		</EditText>
         </LinearLayout>
 
@@ -57,13 +57,13 @@
             <TextView   
 		    	android:layout_width="wrap_content"
 		    	android:layout_height="match_parent"   
-       			android:gravity="left" android:text="日期" />  
+       			android:gravity="left" android:text="@string/tv_tip_date" />  
 
        		<EditText
        		    android:id="@+id/et_tip_day"
        		    android:layout_width="match_parent"
        		    android:layout_height="wrap_content"
-       		    android:ems="10" >
+       		    android:inputType="text">
 			</EditText>
         </LinearLayout>
 

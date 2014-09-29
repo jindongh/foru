@@ -82,7 +82,7 @@ public class TipFragment extends ForUFragment {
 							et_tip_day.getText().toString(),
 							et_tip_time.getText().toString(),
 							sp_tip_repeat.getSelectedItem().toString());
-		        	ForUCalendar.getInstance(TipFragment.this.getActivity()).addTip(tip);
+		        	ForUCalendar.getInstance(TipFragment.this.getActivity().getApplicationContext()).addEvent(tip);
 		        	refreshData();
 				//}
 			}     	
@@ -116,7 +116,7 @@ public class TipFragment extends ForUFragment {
                     @Override  
                     public void onClick(DialogInterface dialog, int which) {  
                     	long id = Long.parseLong((String)mData.get(position).get("id"));
-                    	ForUCalendar.getInstance(getActivity()).rmEvent(id);
+                    	ForUCalendar.getInstance(getActivity().getApplicationContext()).rmEvent(id);
                         refreshData();
                     }  
                 }).show();  

@@ -3,6 +3,7 @@ package net.hankjohn.foru;
 import java.util.Locale;
 
 import net.hankjohn.foru.data.ForUCalendar;
+import net.hankjohn.foru.util.UpgradeUtil;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -11,7 +12,6 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -31,9 +31,10 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
      * The {@link ViewPager} that will host the section contents.
      */
     ViewPager mViewPager;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+    	ForUCalendar.getInstance(getApplicationContext());
+    	
     	super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 

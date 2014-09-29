@@ -5,11 +5,10 @@
     <string name="title_sectionToday">日程</string>
     <string name="title_sectionCourse">课程</string>
     <string name="title_sectionLab">实验</string>
-   	<string name="title_sectionTip">提醒</string>
-   	<string name="title_sectionSetting">设置</string>
-   	
-   	<string name="title_dialog_add_tip">添加提醒</string>
-   	<string name="btn_add">添加</string>
+    <string name="title_sectionTip">提醒</string>
+    <string name="title_sectionSetting">设置</string>
+    <string name="title_dialog_add_tip">添加提醒</string>
+    <string name="btn_add">添加</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="hint_tip_description">提醒内容</string>
@@ -29,5 +28,14 @@
     <string name="tv_setting_version">版本号</string>
     <string name="btn_setting_upgrade">检查更新</string>
     <string name="btn_setting_register">注册账号</string>
+    <string name="btn_setting_test">测试</string>
     <string name="tv_tip_repeat">重复</string>
+    <string name="tv_tip_content">内容</string>
+    <string name="tv_tip_time">时间</string>
+    <string name="tv_tip_date">日期</string>
+    <string name="url_server">http://hankjohn.net/store/version?package=</string>
+    <string name="tv_setting_viberate">震动提醒</string>
+    <string name="tv_setting_audio">闹铃提醒</string>
+    <string name="title_activity_alarm">AlarmActivity</string>
+
 </resources>

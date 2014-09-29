@@ -106,7 +106,7 @@ public class CourseFragment extends ForUFragment {
     		this.view = view;
 
         	lvCourse = (ListView)view.findViewById(R.id.lv_course);
-    		adapter = new CourseAdapter(week, fragment.getActivity(), lvCourse);
+    		adapter = new CourseAdapter(week, fragment.getActivity().getApplicationContext(), lvCourse);
 
             clSelect.initView(fragment,
             		null,
@@ -157,12 +157,12 @@ public class CourseFragment extends ForUFragment {
         	}
         }
         public void addCourse(Course c){
-			ForUCalendar.getInstance(getActivity()).addCourse(c);
+			ForUCalendar.getInstance(getActivity().getApplicationContext()).addEvent(c);
 			dataChanged();
         }
         public void rmCourse(int position){
         	long id = Long.parseLong((String)mData.get(position).get("id"));
-        	ForUCalendar.getInstance(getActivity()).rmEvent(id);
+        	ForUCalendar.getInstance(getActivity().getApplicationContext()).rmEvent(id);
         	dataChanged();
         }
   
